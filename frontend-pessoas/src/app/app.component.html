@@ -1,0 +1,33 @@
+<div class="mat-app-background basic-container">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>Pessoas</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-table [dataSource]="pessoas">
+            <ng-container matColumnDef="nome">
+              <mat-header-cell *matHeaderCellDef>Nome</mat-header-cell>
+              <mat-cell *matCellDef="let pessoa">{{ pessoa.nome }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="idade">
+              <mat-header-cell *matHeaderCellDef>Idade</mat-header-cell>
+              <mat-cell *matCellDef="let pessoa">{{ pessoa.idade }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="municipio">
+              <mat-header-cell *matHeaderCellDef>Município</mat-header-cell>
+              <mat-cell *matCellDef="let pessoa">{{ pessoa.municipio }}</mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="estado">
+              <mat-header-cell *matHeaderCellDef>Estado</mat-header-cell>
+              <mat-cell *matCellDef="let pessoa">{{ pessoa.estado }}</mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+        </mat-card-content>
+      </mat-card>
+    </div>

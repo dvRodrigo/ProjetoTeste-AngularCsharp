@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "O5wFssRJskLA7jofAu0ZhLxEn3tdxWAKeBLPRQeeY0c=",
+  "Source": "ApiPessoas",
+  "BasePath": "_content/ApiPessoas",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}
